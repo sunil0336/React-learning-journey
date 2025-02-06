@@ -8,9 +8,9 @@ function Usee() {
   //   alert("counter in changed");
   // }, [count])
   
-  // useEffect(function (){
-  //   alert("counter in changed");
-  // }, [count])
+  useEffect(function (){
+    alert("counter in changed");
+  }, [count])
 
   console.log("rendering");
 

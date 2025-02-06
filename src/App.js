@@ -4,20 +4,20 @@ import Navbar from './Components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
+
 import Contact from './pages/Contact';
 import Temp from './Components/Temp';
-
-import logo from './logo.svg';
 import './App.css';
 import Parent from './Components/Parent';
+// import logo from './logo.svg';
 
 function App() {
   return (
     <div className="App">   
     
-      <Bar />
+      {/* <Bar /> */}
       <Router>
-        {/* <Navbar /> */}
+        <Navbar />
         {/* <Nav /> */}
         {/* <Temp /> */} 
         <Routes>
