@@ -5,12 +5,12 @@ class Counter extends Component{
   constructor(props){
     super(props);
     this.state = {
-      count: 0
+      count: this.props.counttt || 0
     }
     // this.countHandler = this.countHandler.bind(this) if u r using normal function
   }
 
-    // countHandler () {
+    // countHandler (){
     //     this.setState((prevState) => ({
     //         count: prevState.count + 1,
     //       }));
@@ -18,25 +18,32 @@ class Counter extends Component{
     // }
 
     // if u r using arrow fun.. then no need to use bind , it automatically bind this
-    // countHandler =()=> {
-    //     this.setState((prevState) => ({
-    //         count: prevState.count + 1,
-    //       }));
-    //     // alert("hii");
-    // }
+    dicrement =()=> {
+        this.setState((prevState) => ({
+            count: prevState.count - 1,
+          }));
+        // alert("hii");
+    }
+    increment =()=> {
+        this.setState((prevState) => ({
+            count: prevState.count + 1,
+          }));
+        // alert("hii");
+    }
   
   render() {
     return(
       <>
         {this.state.count}
         
-        {/* <button onClick={this.countHandler}>Increase counter</button> */}
-        <button onClick={() => {this.setState((prevState) => ({
+        <button onClick={this.dicrement}>Dicrement counter</button>
+        <button onClick={this.increment}>Increase counter</button>
+        {/* <button onClick={() => {this.setState((prevState) => ({
             count: prevState.count + 1,
           }))}}>Increase counter</button>
         <button onClick={() => {this.setState((prevState) => ({
             count: prevState.count - 1,
-          }))}}>Decrease counter</button>
+          }))}}>Decrease counter</button> */}
       </>
     )
   }
