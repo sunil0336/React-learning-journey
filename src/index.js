@@ -12,7 +12,7 @@ import DataFetcher from './Assignment/DataFetcher';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <React.StrictMode>
-    {/* <App /> */}
+    <App />
     <br/>
     <Counter counttt={20} />
     <hr/>
