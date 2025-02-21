@@ -9,8 +9,8 @@ app.use(cors());
 const users = [
   {
     id: 1,
-    username: 'user',
-    password: 'password123',
+    username: 'sunil',
+    password: '1234',
   },
 ];
 
@@ -29,7 +29,7 @@ app.post('/login', (req, res) => {
   }
 
   // Create JWT token
-  const token = jwt.sign({ userId: user.id,username : user.username }, secretKey, { expiresIn: '1m' });
+  const token = jwt.sign({ userId: user.id,username : user.username }, secretKey, { expiresIn: '10s' });
 
   res.json({ token });
 });
