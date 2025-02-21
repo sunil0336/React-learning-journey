@@ -9,6 +9,10 @@ import Contact from './pages/Contact';
 import Temp from './Components/Temp';
 import './App.css';
 import Parent from './Components/Parent';
+// jwt pages 
+import LoginPage from './JwtToken/LoginPage';
+import DashboardPage from './JwtToken/DashboardPage';
+
 // import logo from './logo.svg';
 
 function App() {
@@ -27,6 +31,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* for jwt token */}
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
 
         </Routes>
       </Router>
