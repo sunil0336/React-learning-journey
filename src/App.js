@@ -12,12 +12,14 @@ import Parent from './Components/Parent';
 // jwt pages 
 import LoginPage from './JwtToken/LoginPage';
 import DashboardPage from './JwtToken/DashboardPage';
+import Pbar from './Assignment/Pbar';
 
 // import logo from './logo.svg';
 
 function App() {
   return (
-    <div className="App">   
+    <div className="App">  
+      <Pbar /> 
     
       {/* <Bar /> */}
       <Router>

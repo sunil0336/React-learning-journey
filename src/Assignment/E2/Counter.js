@@ -33,18 +33,18 @@ class Counter extends Component{
   
   render() {
     return(
-      <>
+      <div className='text-center text-2xl font-bold'>
         {this.state.count}
         
-        <button onClick={this.dicrement}>Dicrement counter</button>
-        <button onClick={this.increment}>Increase counter</button>
+        <button className='p-2 m-2 border border-red-400' onClick={this.dicrement}>Dicrement counter</button>
+        <button className='p-2 m-2 border border-red-400' onClick={this.increment}>Increase counter</button>
         {/* <button onClick={() => {this.setState((prevState) => ({
             count: prevState.count + 1,
           }))}}>Increase counter</button>
         <button onClick={() => {this.setState((prevState) => ({
             count: prevState.count - 1,
           }))}}>Decrease counter</button> */}
-      </>
+      </div>
     )
   }
 }
